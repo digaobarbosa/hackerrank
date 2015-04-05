@@ -23,10 +23,14 @@
     )
 
   ))
+
+(defn sol3 [s]
+  (clojure.string/join (flatten (map #(reverse %) (partition 2 s))))
+  )
 ;; Runner, similar to how HackerRank wraps the solution.
 (defn run [] (let [lines (rest (line-seq (java.io.BufferedReader. *in*)))]
                (doseq [n lines]
-                 (println (sol2 n)))
+                 (println (sol3 n)))
                ))
 
 

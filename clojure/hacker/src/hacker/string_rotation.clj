@@ -18,4 +18,5 @@
                  (println (solution n)))
                ))
 
-(run)
+
+(+ 1 2)
